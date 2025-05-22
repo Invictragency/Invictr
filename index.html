@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invictr – AI-automation för moderna företag</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .typewriter-cursor::after {
+      content: '|';
+      animation: blink 1s infinite;
+      margin-left: 4px;
+    }
+    section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .parallax-bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans tracking-wide">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 parallax-bg">
+    <h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold mb-6 typewriter-cursor"></h1>
+    <p id="hero-sub" class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl opacity-0 transition-opacity duration-500">
+      ✨ AI-drivna lösningar på affärsutmaningar som sparar tid, pengar och resurser.
+    </p>
+    <a href="#features" id="hero-button"
+       class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-2xl text-lg transition-all duration-300 opacity-0 mb-0">
+      Läs mer
+    </a>
+  </section>
+
+  <!-- Trusted By Section -->
+<section class="pt-4 pb-12 px-6 bg-gray-950">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="text-gray-400 mb-6 text-lg">Betrodd av moderna företag</p>
+    <div class="flex flex-wrap justify-center items-center gap-10 opacity-80">
+      <img src="/logos/logo1.svg" alt="Kund 1" class="h-10 grayscale hover:grayscale-0 transition" />
+      <img src="/logos/logo2.svg" alt="Kund 2" class="h-10 grayscale hover:grayscale-0 transition" />
+      <img src="/logos/logo3.svg" alt="Kund 3" class="h-10 grayscale hover:grayscale-0 transition" />
+    </div>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section id="features" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-16">Vad Invictr automatiserar</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition duration-300 transform hover:-translate-y-1">
+          <h3 class="text-2xl font-semibold mb-4">Leadhantering</h3>
+          <p class="text-gray-400">Automatisera outreach, kvalificering och bokningar – fokusera på de heta leadsen.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition duration-300 transform hover:-translate-y-1">
+          <h3 class="text-2xl font-semibold mb-4">Kundsupport</h3>
+          <p class="text-gray-400">Implementera AI-agenter som hanterar över 80 % av supportärenden – direkt och korrekt.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition duration-300 transform hover:-translate-y-1">
+          <h3 class="text-2xl font-semibold mb-4">Interna processer</h3>
+          <p class="text-gray-400">Effektivisera rapportering, dataregistrering och arbetsflöden med skräddarsydd automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+<!-- Case Studies Section -->
+<section id="case-studies" class="py-24 px-6 bg-gray-950">
+  <div class="max-w-6xl mx-auto bg-gray-800/80 rounded-3xl shadow-xl p-12">
+    <h2 class="text-4xl font-bold text-center mb-16">Exempel på våra lösningar</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- Case 1 -->
+      <div class="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition duration-300 transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2 text-indigo-400">E-handelsbolag</h3>
+        <p class="text-gray-300 mb-2"><strong>Utmaning:</strong> Överbelastad kundsupport.</p>
+        <p class="text-gray-400 mb-2"><strong>Lösning:</strong> AI-chattbot som hanterar vanliga frågor 24/7.</p>
+        <p class="text-green-400"><strong>Resultat:</strong> 80 % färre ärenden till mänsklig support.</p>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition duration-300 transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2 text-indigo-400">B2B SaaS-bolag</h3>
+        <p class="text-gray-300 mb-2"><strong>Utmaning:</strong> Manuell leadsortering tog för mycket tid.</p>
+        <p class="text-gray-400 mb-2"><strong>Lösning:</strong> Automatiserad kvalificering med GPT-agent.</p>
+        <p class="text-green-400"><strong>Resultat:</strong> 3x fler kvalificerade leads per vecka.</p>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition duration-300 transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2 text-indigo-400">Redovisningsbyrå</h3>
+        <p class="text-gray-300 mb-2"><strong>Utmaning:</strong> Tidskrävande manuell rapportering.</p>
+        <p class="text-gray-400 mb-2"><strong>Lösning:</strong> AI-automatiserad sammanställning av månadsrapporter.</p>
+        <p class="text-green-400"><strong>Resultat:</strong> 70 % snabbare leverans till kund.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- CTA Section -->
+  <section class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Låt Invictr automatisera din verksamhet</h2>
+      <p class="text-lg text-gray-300 mb-8">Boka ett kostnadsfritt strategisamtal och upptäck vad AI kan göra för dig.</p>
+      <a href="#"
+         class="inline-block bg-white text-gray-900 font-semibold px-10 py-3 rounded-2xl text-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+         Kom igång
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-8">
+    © 2025 Invictr – AI-automation för moderna företag. Alla rättigheter förbehållna.
+  </footer>
+
+  <script>
+    const typeText = (elementId, text, delay = 60, callback = null) => {
+      const el = document.getElementById(elementId);
+      let i = 0;
+      const type = () => {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, delay);
+        } else {
+          el.classList.remove("typewriter-cursor");
+          if (callback) callback();
+        }
+      };
+      type();
+    };
+
+    // Scroll animation for sections
+    const sections = document.querySelectorAll('section');
+    const observerOptions = {
+      root: null,
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    window.onload = () => {
+      typeText("hero-title", "Intelligent automation för framtidens företag", 60, () => {
+        const sub = document.getElementById("hero-sub");
+        const btn = document.getElementById("hero-button");
+        sub.classList.remove("opacity-0");
+        btn.classList.remove("opacity-0");
+      });
+    };
+  </script>
+
+</body>
+</html>
